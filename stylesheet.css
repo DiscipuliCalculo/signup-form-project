@@ -1,0 +1,30 @@
+.container {
+  display: flex;
+}
+
+.fieldset-constraint {
+  position: relative;
+  width: 35vw;
+}
+
+.form-container {
+  height: 97vh;
+  width: 59vw;
+}
+
+.img-container {
+  height: 97vh;
+  width: 39vw;
+}
+
+.input-col1 {
+  float: left;
+}
+
+.input-col2 {
+  float: right;
+}
+
+input, label {
+  display: block;
+}
