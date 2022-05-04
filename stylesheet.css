@@ -1,22 +1,45 @@
+button {
+  border-radius: 12px;
+  height: 50px;
+  width: 200px;
+}
 .container {
   display: flex;
 }
 
+fieldset {
+  border: 0;
+  box-shadow: 0 8px 6px -6px black;
+}
+
 .fieldset-constraint {
+  display: flex;
   position: relative;
+  justify-content: space-around;
   width: 35vw;
 }
 
 .form-container {
-  height: 97vh;
-  width: 59vw;
+  background-color: whitesmoke;
+  height: 100vh;
+  width: 60vw;
+}
+
+html, body, fieldset {
+  margin:0;
+  padding:0;
 }
 
 .img-container {
-  height: 97vh;
-  width: 39vw;
+  background-image: url('background.jpg');
+  background-size: cover;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  width: 40vw;
 }
 
+/*
 .input-col1 {
   float: left;
 }
@@ -24,7 +47,53 @@
 .input-col2 {
   float: right;
 }
+*/
 
 input, label {
   display: block;
+  border-radius: 5px;
+}
+
+input:focus {
+  border-color: lightblue;
+}
+
+p.it {
+  font-style: italic;
+}
+
+.second-img-container {
+  background-color: black;
+  display: flex;
+  flex-grow: 1;
+  height: 25vh;
+  justify-content: center;
+  opacity: .4;
+  position: relative;
+  top: 13vh;
+}
+
+section {
+  position: relative;
+}
+
+section.form-content {
+  background-color: white;
+  top:13vh;
+  position: relative;
+}
+
+section.intro {
+  left: 2vw;
+  line-height: 0.2em;
+  position: relative;
+  top: 10vh;
+  width: fit-content;
+}
+
+section.outro {
+  left: 2vw;
+  position:relative;
+  top: 17vh;
+  width: fit-content;
 }
